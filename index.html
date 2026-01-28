@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mei Resto</title>
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/css/lightbox.min.css">
+</head>
+
+<body>
+    <!--navbar-->
+    <nav class="navbar fixed-top navbar navbar-expand-lg navbar-dark bg-dark main-color"> 
+        <div class="container-fluid">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+            <a class="navbar-brand me-auto" href="#">Mei Resto</a>
+            <ul class="navbar-nav">
+                <li class="nav-item me-5">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item me-5">
+                <a class="nav-link" href="produk.html">Produk</a>
+                </li>
+                <li class="nav-item me-5">
+                <a class="nav-link" href="promo.html">Promo</a>
+                </li>
+                <li class="nav-item me-5">
+                <a class="nav-link" href="cart.html" tabindex="-1" aria-disabled="true"><i class="bi bi-cart"></i>Keranjang</a>
+                </li>
+            </ul>
+            </div>
+        </div>
+    </nav>   
+
+    <!--banner-->
+    <div class="container-fluid banner d-flex align-items-center">
+        <div class="container">
+            <h1 class="text-light text-center display-5 mb-3">Selamat Datang Di Resto Saya</h1>
+            <h2 class="text-light text-center mb-3">Lagi Mau Makan Apa?</h2>
+            <div class="col-md-8 offset-md-2">
+            <div class="input-group input-group-lg">
+                <select class="form-control" id="inputGroupSelect04">
+                    <option selected>Pilih Kategori Makanan...</option>
+                    <option value="1">Western Food</option>
+                    <option value="2">Local Food</option>
+                    <option value="3">Eastern Food</option>
+                </select>
+            <div class="input-group-append">
+                <button class="btn btn-lg btn-warning text-light" type="Telusuri">Button</button>
+            </div>
+            </div>  
+            </div>          
+        </div>
+
+    </div>
+    
+    <!--Promo-->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <h2 class="text-center">Promo Minggu Ini</h2>
+
+            <div class="row mt-5 justify-content-center">
+                <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                    <img src="image/local2.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Paket Gurame Terbang</h5>
+                            <p class="card-text">Bonus: Gratis 1 Porsi Cah Kangkung atau Sambal Dadak.</p>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                    <img src="image/local5.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Kombo Nasi Campur Kenyang</h5>
+                        <p class="card-text">Harga Spesial: Hanya Rp10.000 (Harga normal Rp15.000).</p>
+                    </div>
+                    </div>                    
+                </div>
+
+                <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                    <img src="image/local1.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mujaer Kecap "Mantap Jiwa"</h5>
+                        <p href="promo.html" class="card-text">Promo: Beli 2 Porsi Mujaer Bakar Kecap, Gratis 2 Es Teh Manis.</p>
+                    </div>
+                    </div>                    
+                </div>
+                
+                <div class="mt-5 d-flex justify-content-center">
+                    <a href="promo.html"class="btn btn-warning btn-lg text-light">Lihat Semua Promo</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Service -->
+     <div class="container-fluid py-5 main-color">
+        <div class="container">
+            <h2 class="text-light text-center mb-3">Kami Melayani</h2>
+
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="d-flex justify-content-center">
+                        <div class="icon-service d-flex align-items-center justify-content-center">
+                            <i class="bi bi-bicycle display-6"></i>
+                        </div>
+                    </div>
+                    <div class="mt-3 text-white">
+                        <h5>Delivery</h5>
+                        <p>Pesanan diantar hangat sampai depan pintu, praktis, cepat, dan hemat.</p>
+                    </div>
+                </div>
+
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="d-flex justify-content-center">
+                        <div class="icon-service d-flex align-items-center justify-content-center">
+                            <i class="bi bi-basket display-6"></i>
+                        </div>
+                    </div>
+                    <div class="mt-3 text-white">
+                        <h5>Take away</h5>
+                        <p>Bungkus praktis, rasa tetap terjaga, siap santap di mana saja.</p>
+                    </div>
+                </div>
+
+                 <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="d-flex justify-content-center">
+                        <div class="icon-service d-flex align-items-center justify-content-center">
+                            <i class="bi bi-cup-straw display-6"></i>
+                        </div>
+                    </div>
+                    <div class="mt-3 text-white">
+                        <h5>Dine in</h5>
+                        <p>Nikmati suasana nyaman, pelayanan ramah, dan hidangan hangat langsung di meja.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </div>
+
+     <!-- Produk -->
+      <div class="container-fluid py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Paling Banyak Dibeli</h2>
+
+            <div class="row">
+                <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="image/local2.jpg" data-lightbox="Produk-Gurame-Terbang"
+                        data-title="Gurame Terbang">
+                    <img src="image/local2.jpg" 
+                    class="card-img-top" alt="...">
+                        </a>
+                        <div class="card-body text-center">
+                            <h5 class="card-title text-warning">Gurami Terbang</h5>
+                            <p class="card-text">Ikan gurame goreng garing merekah, tekstur renyah, daging lembut gurih.</p>
+                            <h4 class="text-warning">Rp 25.000</h4>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="image/local5.jpg" data-lightbox="Produk-Nasi-Campur" 
+                        data-title="Nasi Campur">
+                    <img src="image/local5.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            </a>
+                            <h5 class="card-title text-warning">Nasi Campur</h5>
+                            <p class="card-text">Nasi hangat, aneka lauk pauk, sambal khas, perpaduan rasa lengkap.</p>
+                            <h4 class="text-warning">Rp 15.000</h4>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="image/local6.jpg" data-lightbox="Produk-Nasi-Iga-Bakar-Rica" 
+                        data-title="Nasi Iga Bakar Rica">
+                    <img src="image/local6.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            </a>
+                            <h5 class="card-title text-warning">Nasi Iga Bakar Rica</h5>
+                            <p class="card-text">Iga bakar empuk, bumbu rica pedas nendang, nasi hangat menggoda.</p>
+                            <h4 class="text-warning">Rp 30.000</h4>
+                        </div>
+                    </div>                    
+                </div>
+
+                <div class="col-sm-6 col-lg-3 hovered-card mb-3">
+                    <div class="card">
+                        <a href="local3" data-lightbox="Produk-Nasi-Bebek-Goreng" 
+                        data-title="Nasi Bebek Goreng">
+                    <img src="image/local3.jpg" class="card-img-top" alt="...">
+                        <div class="card-body text-center">
+                            </a>
+                            <h5 class="card-title text-warning">Nasi Bebek Goreng</h5>
+                            <p class="card-text">Bebek goreng krispi, daging empuk, sambal korek pedas, nasi hangat.</p>
+                            <h4 class="text-warning">Rp 20.000</h4>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+
+            <div class="mt-5 d-flex justify-content-center">
+                <a href="#" class="btn btn-warning btn-lg text-light">Lihat Lainnya</a>
+            </div>
+        </div>
+      </div>
+    <!-- review -->
+     <div class="container-fluid py-5 main-color">
+        <div class="container">
+            <h2 class="text-light text-center mb-5">Apa Kata Customer</h2>
+
+            <div class="row" data-masonry='{"percentPosition": true }'>
+                <div class="col-lg-4 mb-3 hovered-card">
+                    <div class="card p-3">
+                    <figure>
+                    <blockquote class="blockquote">
+                        <p>Makannya Enak Enak</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Khoirun Najib 
+                    </figcaption>
+                    <p>
+                        "Semua menunya juara! Rasa autentik, bahan segar, dan porsinya pas, bikin nagih."
+                    </p>
+                    </figure>                        
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 hovered-card">
+                    <div class="card p-3">
+                    <figure>
+                    <blockquote class="blockquote">
+                        <p>Minumannya seger, banyak promo, sering dikasih diskon</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        andika ari pradana
+                    </figcaption>
+                    <p>
+                        "Minumannya segar dan bikin ketagihan! Promonya banyak, sering ada diskon menarik yang bikin dompet aman."
+                    </p>
+                    </figure>                        
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 hovered-card">
+                    <div class="card p-3">
+                    <figure>
+                    <blockquote class="blockquote">
+                        <p>pelayanannya bagus, Karyawannya ramah ramah</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Affan Faisal 
+                    </figcaption>
+                    <p>
+                        "Pelayanannya luar biasa! Karyawannya sangat ramah dan sigap membantu, suasana makan jadi makin nyaman."
+                    </p>
+                    </figure>                        
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 hovered-card">
+                    <div class="card p-3">
+                    <figure>
+                    <blockquote class="blockquote">
+                        <p>Delivery cepat</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Yuswo Dyah 
+                    </figcaption>
+                    <p>
+                        "Pengirimannya kilat! Makanan sampai masih hangat dan kurirnya sangat sopan, benar-benar layanan profesional."
+                    </p>
+                    </figure>                        
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 hovered-card">
+                    <div class="card p-3">
+                    <figure>
+                    <blockquote class="blockquote">
+                        <p>Tempatnya bersih</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Sekar
+                    </figcaption>
+                    <p>
+                        "Tempatnya sangat bersih dan rapi! Suasananya nyaman dan higienis, bikin acara makan bersama keluarga jadi terasa lebih tenang dan menyenangkan."
+                    </p>
+                    </figure>                        
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mb-3 hovered-card">
+                    <div class="card p-3">
+                    <figure>
+                    <blockquote class="blockquote">
+                        <p>Take away gak pake lama, kerja karyawannya cepat</p>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Rasel 
+                    </figcaption>
+                    <p>
+                        "Layanan take away sangat kilat! Karyawannya bekerja cepat dan cekatan, jadi tidak perlu menunggu lama untuk menikmati pesanan."
+                    </p>
+                    </figure>                        
+                    </div>
+                </div>
+
+            </div>
+        </div>
+     </div>
+
+    <!-- reservasi -->
+     <div class="container-fluid py-5">
+        <div class="container">
+            <h2 class="text-center">Reservasi</h2>
+            <p class="text-center">Jangan Sampai Kehabisan Tempat. Reservasi sekarang!!!</p>
+
+            <form class="col-md-8 offset-md-2 col-lg-6 offset-lg-3 mt-5">
+                <div mb-3>
+                    <label for="nama" class="Form-label">Nama</label>
+                    <input type="text" class="form-control" id="nama">
+                </div>
+                <div mb-3>
+                    <label for="Nokontak" class="Form-label">No. Kontak</label>
+                    <input type="text" class="form-control" id="NoKontak">
+                </div>
+
+                <div mb-3>
+                    <label for="JumlahMeja" class="Form-label">Jumlah Meja</label>
+                    <input type="number" class="form-control" id="JumlahMeja">
+                </div>
+                <div class="mb-3">
+                    <button class="btn btn-warning text-light w-100">Reservasi</button>
+                </div>
+
+            </form>
+        </div>
+     </div>
+
+    <!-- Subscribe -->
+     <div class="container-fluid py-5 content-subscribe text-light">
+        <div class="container">
+            <h5 class="text-center mb-4">Temui Kami</h5>
+            <div class="row justify-content-center">
+                <div class="col-md-1 d-flex justify-content-center mb-2">
+                   <i class="bi bi-facebook fs-4"></i> 
+                </div>
+                <div class="col-md-1 d-flex justify-content-center mb-2">
+                   <i class="bi bi-instagram fs-4"></i> 
+                </div>
+                <div class="col-md-1 d-flex justify-content-center mb-2">
+                   <i class="bi bi-twitter fs-4"></i> 
+                </div>
+                <div class="col-md-1 d-flex justify-content-center mb-2">
+                   <i class="bi bi-youtube fs-4"></i> 
+                </div>
+            </div>
+
+            <h5 class="text-center mt-5" mb->Subscribe</h5>
+            <p class="text-center font-monospace">Untuk informasi tentang Promo</p>
+            <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Ketikan E-mail" aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-warning text-light" type="button" id="button-addon2">Subscribe</button>
+                </div>
+            </div>            
+        </div>
+     </div>
+
+     <!-- Footer -->
+     <div class="container-fluid py-5 bg-dark text-light">
+        <div class="container d-flex justify-content-between">
+            <label>&copy;2026 Mei Resto</label>
+            <label>created by mei safana</label>
+        </div>
+     </div>
+
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha384-GNFwBvfVxBkLMJpYMOABq3c+d3KnQxudP/mGPkzpZSTYykLBNsZEnG2D9G/X/+7D" crossorigin="anonymous" async></script>
+</body>
+
+</html>
